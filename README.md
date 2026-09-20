@@ -11,6 +11,7 @@ The project demonstrates how raw healthcare data can be transformed into meaning
 - SQL
 - Statistics
 - Power BI
+- Tableau
 
 > **Note:** This project uses synthetic healthcare data created for portfolio and learning purposes. It does not contain real patient information.
 
@@ -33,51 +34,48 @@ The project demonstrates how raw healthcare data can be transformed into meaning
 
 ## 🏗️ Project Architecture
 
-<img width="1536" height="1024" alt="Architecture_Hospital" src="https://github.com/user-attachments/assets/025fb881-3509-4026-8c7b-8d02bd258581" />
-
+<img width="1655" height="950" alt="Architecture_Hospital" src="https://github.com/user-attachments/assets/8e23594d-04f0-4b6f-b0a2-71a0bfa0a55e" />
 
 ### Workflow
 
 Raw Healthcare Data  
 ↓  
-Python Data Cleaning & EDA  
+Python Data Cleaning & Exploratory Analysis  
 ↓  
 Cleaned Healthcare Dataset  
 ↓  
-Excel + SQL + Statistics  
+Excel + SQL + Statistics + Python Analysis  
 ↓  
 Power BI Dashboard  
+↓  
+Tableau Dashboard  
 ↓  
 Business Insights
 
 ---
 
-## 📊 Power BI Dashboard
+## 📌 Dataset
 
-<img width="1146" height="637" alt="Dashboard" src="https://github.com/user-attachments/assets/827b43f3-97b8-43a5-8af1-79536f071b18" />
+The project contains **15,000 synthetic hospital admission records** with **23 columns**.
 
+Key fields include:
 
-The Power BI dashboard provides an interactive overview of hospital operations, revenue, patient experience, and readmission patterns.
-
-### Dashboard Visualizations
-
-- Admissions by Department
-- Revenue by Department
-- Monthly Admissions
-- Average Bill by Treatment
-- Readmission by Department
-- Revenue by Insurance
-- Average Bill by Length of Stay
-
-### Key KPIs
-
-| KPI | Value |
-|---|---:|
-| Total Admissions | 15,000 |
-| Total Revenue | ₹965.49M |
-| Average Bill | ₹64.37K |
-| Average Length of Stay | 4.87 Days |
-| 30-Day Readmission Rate | 11.86% |
+- Patient ID
+- Admission ID
+- Age
+- Gender
+- Department
+- Admission Date
+- Discharge Date
+- Diagnosis
+- Treatment
+- Admission Type
+- Insurance Type
+- Total Bill
+- Length of Stay
+- Patient Rating
+- Outcome
+- 30-Day Readmission
 
 ---
 
@@ -85,6 +83,7 @@ The Power BI dashboard provides an interactive overview of hospital operations, 
 
 Python was used for:
 
+- Data loading
 - Data cleaning
 - Data quality checks
 - Exploratory Data Analysis
@@ -98,8 +97,6 @@ Python was used for:
 
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - SciPy
 
 ---
@@ -108,7 +105,7 @@ Python was used for:
 
 SQL was used to answer business questions and calculate important hospital KPIs.
 
-Analysis included:
+### Analysis Included
 
 - Total admissions
 - Admissions by department
@@ -138,7 +135,7 @@ Analysis included:
 
 ## 📗 Excel Analysis
 
-Excel was used for management-level analysis and dashboard preparation.
+Excel was used for management-level analysis and KPI preparation.
 
 ### Excel Work Included
 
@@ -150,7 +147,9 @@ Excel was used for management-level analysis and dashboard preparation.
 - SUMIFS
 - COUNTIFS
 - AVERAGEIFS
-- Dashboard creation
+- Dashboard preparation
+  <img width="1917" height="993" alt="Excel_Dashboard" src="https://github.com/user-attachments/assets/d67b4c34-b2eb-472d-bac6-58389ad15eb9" />
+
 
 ---
 
@@ -191,6 +190,52 @@ The tested categorical variables showed a statistically significant association.
 
 ---
 
+# 📊 Power BI Dashboard
+
+<img width="1146" height="637" alt="Dashboard" src="https://github.com/user-attachments/assets/827b43f3-97b8-43a5-8af1-79536f071b18" />
+
+The Power BI dashboard provides an interactive overview of hospital operations, revenue, patient experience, and readmission patterns.
+
+### Dashboard Visualizations
+
+- Admissions by Department
+- Revenue by Department
+- Monthly Admissions
+- Average Bill by Treatment
+- Readmission by Department
+- Revenue by Insurance
+- Average Bill by Length of Stay
+
+### Key KPIs
+
+| KPI | Value |
+|---|---:|
+| Total Admissions | 15,000 |
+| Total Revenue | ₹965.49M |
+| Average Bill | ₹64.37K |
+| Average Length of Stay | 4.87 Days |
+| 30-Day Readmission Rate | 11.86% |
+
+---
+
+# 📈 Tableau Dashboard
+
+<img width="1010" height="803" alt="Tableau Dashboard" src="https://github.com/user-attachments/assets/21dbafd0-d99f-410d-a178-4c94c3c580ae" />
+
+A Tableau dashboard was also created using the cleaned healthcare dataset to provide an additional interactive visualization layer.
+
+### Tableau Visualizations
+
+- Admissions by Department
+- Readmission by Department
+- Revenue by Insurance Type
+- Average Bill by Length of Stay
+- Total Admissions KPI
+
+Tableau was used to demonstrate dashboard development and visualization skills across multiple Business Intelligence tools.
+
+---
+
 ## 🔍 Key Findings
 
 - General Medicine recorded the highest number of admissions.
@@ -223,6 +268,9 @@ Healthcare DataAnalyst Project/
 ├── powerbi/
 │   └── dashboard_healthcare.pbix
 │
+├── tableau/
+│   └── healthcare_dashboard.twbx
+│
 ├── python/
 │   └── healthcare_EDA.ipynb
 │
@@ -233,52 +281,25 @@ Healthcare DataAnalyst Project/
 │
 ├── screenshots/
 │   ├── architecture.png
-│   └── powerbi_dashboard.png
+│   ├── powerbi_dashboard.png
+│   └── tableau_dashboard.png
 │
 ├── .gitignore
 └── README.md
-```
-
 
 ## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
-| --- | --- |
+|---|---|
 | Excel | Data cleaning, PivotTables, PivotCharts and KPI analysis |
 | Python | Data cleaning, EDA and statistical analysis |
 | Pandas | Data manipulation |
 | NumPy | Numerical analysis |
-| Matplotlib | Visualization |
-| Seaborn | Visualization |
 | SciPy | Statistical analysis |
 | SQL | Business analysis and KPI queries |
 | Power BI | Interactive dashboard |
+| Tableau | Interactive dashboard and visualization |
 | GitHub | Project documentation and portfolio |
-
----
-
-## 📌 Dataset
-
-The project contains **15,000 synthetic hospital admission records** with **23 columns**.
-
-Key fields include:
-
-- Patient ID
-- Admission ID
-- Age
-- Gender
-- Department
-- Admission Date
-- Discharge Date
-- Diagnosis
-- Treatment
-- Admission Type
-- Insurance Type
-- Total Bill
-- Length of Stay
-- Patient Rating
-- Outcome
-- 30-Day Readmission
 
 ---
 
@@ -301,6 +322,7 @@ High billing values were reviewed as potential outliers but were not automatical
 - SQL
 - Excel
 - Power BI
+- Tableau
 - Data Visualization
 - Business Intelligence
 - KPI Development
