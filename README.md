@@ -286,7 +286,7 @@ Healthcare DataAnalyst Project/
 │
 ├── .gitignore
 └── README.md
-
+```
 ## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
